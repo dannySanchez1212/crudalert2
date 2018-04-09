@@ -158,6 +158,7 @@
       }
 
       function deleteData(id){
+
           var csrf_token = $('meta[name="csrf-token"]').attr('content');
           swal({
               title: 'Are you sure?',
