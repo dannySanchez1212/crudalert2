@@ -11,14 +11,14 @@
     
     <link href="{{ asset('assets/datatables/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
 
-     <!-- SweetAlert2-->
+    
       <script src="{{ asset('assets/sweetalert2/sweetalert2.min.js') }}"></script>
       <link href="{{ asset('assets/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
     <link href="{{ asset('assets/bootstrap/css/ie10-viewport-bug-workaround.css') }}" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+ 
     <link href="{{ asset('assets/bootstrap/css/navbar-fixed-top.css') }}" rel="stylesheet">
 
   
@@ -158,7 +158,7 @@
       }
 
       function deleteData(id){
-
+          save_method = 'delete';
           var csrf_token = $('meta[name="csrf-token"]').attr('content');
           swal({
               title: 'Are you sure?',
