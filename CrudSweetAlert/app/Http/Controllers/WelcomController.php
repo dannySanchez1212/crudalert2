@@ -7,13 +7,13 @@ use Yajra\DataTables\DataTables;
 
 use App\Contact;
 
-class ContactController extends Controller
+class WelcomController extends Controller
 {
     
     public function index()
     {
         //
-        return view('welcome');
+        return view('welcome2');
     }
 
     

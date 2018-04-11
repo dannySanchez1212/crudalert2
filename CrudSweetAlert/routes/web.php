@@ -19,3 +19,6 @@ Route::resource('contact', 'ContactController', [
 	'except' => ['create']
 ]);
 Route::get('api/contact', 'ContactController@apiContact')->name('api.contact');
+Auth::routes();
+
+Route::get('/welcome2','WelcomController@index')->name('welcome2');
